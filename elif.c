@@ -14,4 +14,16 @@ void dosyadaKelimeAra(const char*girdiDosyaAdi, const char*ciktiDosyaAdi,const c
     }
 
     //rapor basligi yazdırma
+
+    fprintf(ciktiDosya, "-----METIN ARAMA MOTORU RAPORU-----\n\n");
+    fprintf(ciktiDosya, "Aranan Kelime: %s \n",aranacakKelime);
+    fprintf(ciktiDosya, "Taranan Dosya: %s \n",girdiDosyaAdi);
+    fprintf(ciktiDosya,"\n----------------------------------\n\n");
 }
+
+
+
+
+
+
+
