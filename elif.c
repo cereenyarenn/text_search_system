@@ -19,10 +19,16 @@ void dosyadaKelimeAra(const char*girdiDosyaAdi, const char*ciktiDosyaAdi,const c
     fprintf(ciktiDosya, "Aranan Kelime: %s \n",aranacakKelime);
     fprintf(ciktiDosya, "Taranan Dosya: %s \n",girdiDosyaAdi);
     fprintf(ciktiDosya,"\n----------------------------------\n\n");
+
+
+    
+
+
+  // fclose(girdiDosya);    bellkete gereksiz yer kaplamasın ve yazılanlar tam olarak kaydedilsin diye kullanıyoruz
+   //fclose(ciktiDosya); 
+//bunlari kodun sonuna ekleyeceğiz 
+
 }
-
-
-
 
 
 
