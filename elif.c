@@ -13,7 +13,7 @@ void dosyadaKelimeAra(const char*girdiDosyaAdi, const char*ciktiDosyaAdi,const c
         return ;
     }
 
-    //rapor basligi yazdırma
+    //rapor basligi yazdırma dosyaya
 
     fprintf(ciktiDosya, "-----METIN ARAMA MOTORU RAPORU-----\n\n");
     fprintf(ciktiDosya, "Aranan Kelime: %s \n",aranacakKelime);
@@ -21,12 +21,18 @@ void dosyadaKelimeAra(const char*girdiDosyaAdi, const char*ciktiDosyaAdi,const c
     fprintf(ciktiDosya,"\n----------------------------------\n\n");
 
 
-    
+    //bu kisimda kodun asil kismi gelecek(kelimelerin kac kez geçtigini bulan program)
 
 
-  // fclose(girdiDosya);    bellkete gereksiz yer kaplamasın ve yazılanlar tam olarak kaydedilsin diye kullanıyoruz
-   //fclose(ciktiDosya); 
-//bunlari kodun sonuna ekleyeceğiz 
+    //toplam sonucları dosyaya ve ekrana yazdırıyoruz.
+    fprintf(ciktiDosya,"\n---------------------\n");
+    fprintf(ciktiDosya,"Toplam bulunan eslesme sayisi: %d \n",toplamEslenme);
+
+    printf("Arama tamamlandi. Sonuclar %s dosyasina kaydedildi.\n",ciktiDosyaAdi);
+
+
+   fclose(girdiDosya);    //bellkete gereksiz yer kaplamasın ve yazılanlar tam olarak kaydedilsin diye kullanıyoruz
+   fclose(ciktiDosya); 
 
 }
 
